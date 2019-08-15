@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>OMDB Movie Search</title>
+<link rel="stylesheet" href="css.css"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<div class="container"> 
+	<div class="jumbotron text-center">
+		<h3> OMDB Movie Search</h3>
+		<h5>
+		
+		<span class="label label-success">Using the RESTful OMDB Search API
+		</span></h5>
+	</div>
+	<div class="container">
+		<input type="text" id="characterId" placeholder="Enter Movie Title"
+		class = "form-control"/>
+		<input type="submit" value="Get Movie Info" id="characterSubmit"
+		class="form-control btn btn-info"/>
+	</div>
+	<br>
+	<br>
+	<br>
+	<div class="well">
+	<div class="card mb-4 text-center center" id="card" >
+  <div class="row no-gutters">
+    <div class="col-md-4 text-center">
+      <img src="..." id="characterImg" class="card-img" alt="">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title" id="characterName"></h5>
+        <p class="card-text" id="charPlot"></p>
+        <p class="card-text"><small class="text-muted" id="year"></small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+	
+	<h3 id="characterName"></h3>
+	<h3 id="characterWorld"></h3>
+	<h3 id="films"></h3>
+	<img alt="" src="" id="characterImg"/>
+	</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="starwars.js"></script>
+
+</body>
+</html>
